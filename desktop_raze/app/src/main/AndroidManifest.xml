@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.terry.desktop_raze"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17"
+        tools:overrideLibrary="android.support.constraint" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="環保署PM2.5微型感測器(室內版)">
+
+        <activity
+            android:name="com.example.terry.desktop_raze.MainActivity"
+            android:label="環保署PM2.5微型感測器(室內版)"
+            android:screenOrientation="portrait"  >
+        </activity>
+
+        <activity
+            android:name="com.example.terry.desktop_raze.DeviceListActivity"
+            android:label="環保署PM2.5微型感測器(室內版)"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.terry.desktop_raze.movie_warning"
+            android:label="環保署PM2.5微型感測器(室內版)"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.example.terry.desktop_raze.picture_warning"
+            android:label="環保署PM2.5微型感測器(室內版)"
+            android:screenOrientation="portrait" >
+        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+    </application>
+
+</manifest>
